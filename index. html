@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Shakur Designs | Request Quote – Printing & Design Uganda</title>
+  <meta name="description" content="Request a quote for graphic design, printing, branding & custom merchandise from Shakur Designs. Based in Uganda. Fast response, call or WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fefaf5;
+      color: #1c1c1c;
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 253, 245, 0.96);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+      border-bottom: 1px solid #f0e2d0;
+      padding: 14px 0;
+    }
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-badge {
+      background: linear-gradient(135deg, #c27e2e, #9b5e1f);
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: white;
+      box-shadow: 0 6px 12px rgba(194,126,46,0.2);
+    }
+    .logo-text h1 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #c27e2e, #a5691e);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      line-height: 1.2;
+    }
+    .logo-text span {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #a5712c;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #2b241c;
+      transition: 0.2s;
+    }
+    .nav-links a:hover { color: #c27e2e; }
+    .mobile-menu {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #c27e2e;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 44px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+    .btn-primary:hover { background: #9b5e1f; transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #c27e2e;
+      color: #c27e2e;
+      padding: 10px 24px;
+      border-radius: 44px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn-outline:hover { background: #c27e2e; color: white; }
+    .hero-order {
+      padding: 60px 0 40px;
+      background: linear-gradient(115deg, #fff7ed 0%, #ffefdd 100%);
+    }
+    .order-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: center;
+    }
+    .order-text {
+      flex: 1;
+    }
+    .order-text h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      margin: 16px 0;
+    }
+    .highlight {
+      color: #c27e2e;
+      border-bottom: 3px solid #ffd9a5;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin: 28px 0 20px;
+    }
+    .section-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      text-align: center;
+      margin: 48px 0 16px;
+    }
+    .section-sub {
+      text-align: center;
+      color: #6b5a48;
+      margin-bottom: 48px;
+    }
+    .services-ordering {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+    .order-card {
+      background: white;
+      border-radius: 36px;
+      padding: 28px 22px 32px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+      transition: all 0.25s;
+      text-align: center;
+      border: 1px solid #f3e5d5;
+    }
+    .order-card i {
+      font-size: 2.6rem;
+      color: #c27e2e;
+      margin-bottom: 20px;
+    }
+    .order-card h3 {
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
+    .order-card p {
+      color: #6b5a48;
+      margin-bottom: 16px;
+    }
+    .quote-badge {
+      display: inline-block;
+      background: #e9dbc9;
+      color: #7a4a1a;
+      padding: 6px 16px;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 12px 0;
+    }
+    .order-btn {
+      background: #1f1b16;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 40px;
+      font-weight: 600;
+      margin-top: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.2s;
+    }
+    .order-btn:hover { background: #c27e2e; }
+    .cart-panel {
+      background: #fff7ef;
+      border-radius: 48px;
+      padding: 32px;
+      margin: 30px 0 50px;
+      border: 1px solid #ffe1bd;
+    }
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 2px dashed #e2cfb5;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    #cartItemsList {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    #cartItemsList li {
+      display: flex;
+      justify-content: space-between;
+      background: white;
+      padding: 12px 18px;
+      border-radius: 60px;
+      margin-bottom: 10px;
+    }
+    .custom-order {
+      background: #1f1b16;
+      border-radius: 48px;
+      padding: 48px;
+      color: white;
+      margin: 30px 0 60px;
+    }
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .form-group {
+      flex: 1;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 40px;
+      border: none;
+      background: #2e2821;
+      color: white;
+      font-family: inherit;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #b9aa97;
+    }
+    .portfolio-mini {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .port-item {
+      background: #efe2d2;
+      border-radius: 28px;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+    .port-item:hover {
+      transform: translateY(-5px);
+    }
+    .port-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .port-item p {
+      padding: 12px;
+      font-weight: 600;
+    }
+    .footer {
+      background: #14110d;
+      color: #cfc3b2;
+      padding: 40px 0 24px;
+      text-align: center;
+    }
+    @media (max-width: 800px) {
+      .nav-links { display: none; flex-direction: column; background: white; padding: 20px; border-radius: 28px; width: 100%; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+      .nav-links.show { display: flex; }
+      .mobile-menu { display: block; }
+      .order-text h1 { font-size: 2.2rem; }
+      .cart-panel { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-flex">
+    <div class="logo-area">
+      <div class="logo-badge"><i class="fas fa-pen-fancy"></i></div>
+      <div class="logo-text">
+        <h1>SHAKUR DESIGNS</h1>
+        <span>request quote • uganda</span>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services-order">Services</a></li>
+      <li><a href="#custom">Custom Order</a></li>
+      <li><a href="#gallery">Portfolio</a></li>
+      <li><a href="#contact-order">Contact</a></li>
+    </ul>
+    <div class="mobile-menu" id="mobileBtn"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-order">
+    <div class="container order-grid">
+      <div class="order-text">
+        <span class="btn-outline" style="border-color:#c27e2e; font-size:0.8rem;"><i class="fas fa-calculator"></i> pay after quote</span>
+        <h1>Design & print <span class="highlight">your way</span><br>in Uganda</h1>
+        <p>Select the services you need, build your quote request, and we'll get back to you with exact pricing based on your requirements.</p>
+        <div class="cta-buttons">
+          <a href="#services-order" class="btn-primary"><i class="fas fa-clipboard-list"></i> Request quote</a>
+          <a href="tel:0709298041" class="btn-outline"><i class="fas fa-phone-alt"></i> Call 0709 298041</a>
+          <a href="https://wa.me/256740311003" class="btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+        <p style="margin-top: 16px;"><i class="fas fa-truck"></i> 🚚 Nationwide delivery – Masaka, Kampala, Jinja, Gulu & all Uganda</p>
+      </div>
+      <div style="flex:1; min-width: 200px; text-align:center;">
+        <i class="fas fa-file-invoice-dollar" style="font-size: 4rem; color:#c27e2e; opacity:0.7;"></i>
+        <p style="margin-top: 16px;"><strong>💬 Get a free quote</strong><br>Tell us what you need → we price fairly</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" id="services-order">
+    <h2 class="section-title">📋 request a quote for any service</h2>
+    <p class="section-sub">Select services, add to your quote request, and we'll contact you with pricing based on your exact needs.</p>
+    <div class="services-ordering" id="servicesContainer">
+      <div class="order-card" data-name="General Printing">
+        <i class="fas fa-print"></i>
+        <h3>General Printing</h3>
+        <p>Documents, reports, school work, books, copies</p>
+        <div class="quote-badge"><i class="fas fa-tag"></i> price depends on quantity & paper type</div>
+        <button class="order-btn add-to-cart">📝 Request quote</button>
+      </div>
+      <div class="order-card" data-name="Logo & Brand Identity">
+        <i class="fas fa-trademark"></i>
+        <h3>Logo + Branding</h3>
+        <p>Logo design, business cards, letterheads, brand guidelines</p>
+        <div class="quote-badge"><i class="fas fa-tag"></i> price depends on complexity & deliverables</div>
+        <button class="order-btn add-to-cart">📝 Request quote</button>
+      </div>
+      <div class="order-card" data-name="Large Format Printing">
+        <i class="fas fa-flag-checkered"></i>
+        <h3>Banners & Signage</h3>
+        <p>Banners, signposts, roll-ups, posters, vehicle branding</p>
+        <div class="quote-badge"><i class="fas fa-tag"></i> price depends on size & material</div>
+        <button class="order-btn add-to-cart">📝 Request quote</button>
+      </div>
+      <div class="order-card" data-name="Custom Merchandise">
+        <i class="fas fa-tshirt"></i>
+        <h3>Custom Printing</h3>
+        <p>T-shirts, mugs, caps, hoodies, aprons, pens</p>
+        <div class="quote-badge"><i class="fas fa-tag"></i> price depends on quantity & design</div>
+        <button class="order-btn add-to-cart">📝 Request quote</button>
+      </div>
+      <div class="order-card" data-name="Graphic Design">
+        <i class="fas fa-paintbrush"></i>
+        <h3>Graphic Design</h3>
+        <p>Flyers, posters, social media graphics, catalogs, menus</p>
+        <div class="quote-badge"><i class="fas fa-tag"></i> price depends on number of designs & complexity</div>
+        <button class="order-btn add-to-cart">📝 Request quote</button>
+      </div>
+      <div class="order-card" data-name="Business Stationery">
+        <i class="fas fa-id-card"></i>
+        <h3>Business Stationery</h3>
+        <p>Business cards, letterheads, envelopes, receipts, stickers</p>
+        <div class="quote-badge"><i class="fas fa-tag"></i> price depends on quantity & finish</div>
+        <button class="order-btn add-to-cart">📝 Request quote</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cart-panel" id="quoteSummary">
+      <div class="cart-header">
+        <h3><i class="fas fa-file-invoice"></i> Your quote request</h3>
+        <span id="cartCount">0 services</span>
+      </div>
+      <ul id="cartItemsList">
+        <li style="color:gray;">No services selected. Click "Request quote" on any service.</li>
+      </ul>
+      <div class="total-row" style="font-size:1rem; color:#6b5a48;">Pricing will be sent after we understand your requirements</div>
+      <button id="proceedOrderBtn" class="btn-primary" style="margin-top: 20px; width:100%;"><i class="fab fa-whatsapp"></i> Send quote request via WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="container" id="custom">
+    <div class="custom-order">
+      <h3><i class="fas fa-pen-ruler"></i> Custom order – tell us exactly what you need</h3>
+      <p>Describe your project in detail (quantity, size, design preferences, deadline) and we'll reply with a precise quote within hours.</p>
+      <form id="customOrderForm">
+        <div class="form-row">
+          <div class="form-group"><input type="text" placeholder="Full name" id="custName" required></div>
+          <div class="form-group"><input type="email" placeholder="Email address" id="custEmail" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><input type="tel" placeholder="Phone number (WhatsApp preferred)" id="custPhone"></div>
+          <div class="form-group">
+            <select id="serviceType">
+              <option>General Printing</option>
+              <option>Logo & Branding</option>
+              <option>Large Format Printing</option>
+              <option>Custom Merchandise</option>
+              <option>Graphic Design</option>
+              <option>Business Stationery</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><textarea rows="4" placeholder="Tell us: what do you need? (quantity, size, colors, deadline, any specific requirements...)" id="custMsg" required></textarea></div>
+        <button type="submit" class="btn-primary" style="background:#25D366; width:auto;"><i class="fab fa-whatsapp"></i> Send custom request</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container" id="gallery">
+    <h2 class="section-title">✨ recent work delivered in Uganda</h2>
+    <div class="portfolio-mini">
+      <div class="port-item"><img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400&h=250&fit=crop" alt="Hotel branding"><p>🏨 Hotel branding – Masaka</p></div>
+      <div class="port-item"><img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&h=250&fit=crop" alt="Custom T-shirts"><p>👕 Custom T-shirts – Kampala</p></div>
+      <div class="port-item"><img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=250&fit=crop" alt="Event flyers"><p>🎉 Event flyers – Jinja</p></div>
+      <div class="port-item"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=400&h=250&fit=crop" alt="Logo design"><p>✨ Logo design – Gulu</p></div>
+    </div>
+  </div>
+
+  <div class="container" id="contact-order" style="margin-bottom: 70px;">
+    <div style="background: #f6efe5; border-radius: 48px; padding: 40px 30px; text-align: center;">
+      <h3><i class="fas fa-headset"></i> Need a quick quote? Call or WhatsApp</h3>
+      <p style="margin: 16px 0;">Our team is ready to discuss your project and give you an instant estimate.</p>
+      <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:0709298041" class="btn-primary" style="background:#1f1b16;"><i class="fas fa-phone"></i> Call 0709 298041</a>
+        <a href="tel:0740311003" class="btn-primary" style="background:#1f1b16;"><i class="fas fa-phone-alt"></i> Call 0740 311003</a>
+        <a href="https://wa.me/256740311003" target="_blank" class="btn-primary" style="background:#25D366;"><i class="fab fa-whatsapp"></i> WhatsApp 0740 311003</a>
+      </div>
+      <p style="margin-top: 24px;"><i class="fas fa-envelope"></i> Email: creedwhite250@gmail.com  |  Fast response • Uganda nationwide</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Shakur Designs – Quality You Can See, Service You Can Trust. Serving Uganda nationwide.</p>
+    <div style="margin-top: 16px;">
+      <a href="tel:0709298041" style="color:#c27e2e; margin:0 12px;">📞 0709 298041</a>
+      <a href="tel:0740311003" style="color:#c27e2e; margin:0 12px;">📞 0740 311003</a>
+      <a href="https://wa.me/256740311003" style="color:#c27e2e; margin:0 12px;">💬 WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let quoteRequests = [];
+
+  function updateQuoteUI() {
+    const cartList = document.getElementById('cartItemsList');
+    const cartCountSpan = document.getElementById('cartCount');
+    if (!cartList) return;
+    if (quoteRequests.length === 0) {
+      cartList.innerHTML = '<li style="color:gray;">No services selected. Click "Request quote" on any service.</li>';
+      cartCountSpan.innerText = '0 services';
+      return;
+    }
+    let html = '';
+    quoteRequests.forEach((item, idx) => {
+      html += `<li>
+        <span><strong>${item.name}</strong></span>
+        <button style="background:#c27e2e; border:none; color:white; border-radius:40px; padding:4px 12px; cursor:pointer;" class="remove-item" data-index="${idx}">Remove</button>
+      </li>`;
+    });
+    cartList.innerHTML = html;
+    cartCountSpan.innerText = `${quoteRequests.length} service${quoteRequests.length !== 1 ? 's' : ''}`;
+    
+    document.querySelectorAll('.remove-item').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const idx = parseInt(btn.getAttribute('data-index'));
+        quoteRequests.splice(idx, 1);
+        updateQuoteUI();
+      });
+    });
+  }
+
+  document.querySelectorAll('.add-to-cart').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = btn.closest('.order-card');
+      const name = card.getAttribute('data-name');
+      quoteRequests.push({ name: name });
+      updateQuoteUI();
+      btn.innerHTML = '✓ Added to quote';
+      setTimeout(() => { btn.innerHTML = '📝 Request quote'; }, 800);
+    });
+  });
+
+  document.getElementById('proceedOrderBtn')?.addEventListener('click', () => {
+    if (quoteRequests.length === 0) {
+      alert('Please select at least one service to request a quote.');
+      return;
+    }
+    let message = `🛒 *QUOTE REQUEST - SHAKUR DESIGNS*%0A%0A`;
+    message += `*Services needed:*%0A`;
+    quoteRequests.forEach((item, i) => {
+      message += `${i+1}. ${item.name}%0A`;
+    });
+    message += `%0A📍 *Location:* Uganda%0A`;
+    message += `📞 *Please contact me with pricing based on my requirements.*%0A%0A`;
+    message += `👉 Reply with: quantity, size, material preferences if any.`;
+    const waLink = `https://wa.me/256740311003?text=${message}`;
+    window.open(waLink, '_blank');
+  });
+
+  const customForm = document.getElementById('customOrderForm');
+  if(customForm) {
+    customForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const email = document.getElementById('custEmail').value;
+      const phone = document.getElementById('custPhone').value;
+      const service = document.getElementById('serviceType').value;
+      const msg = document.getElementById('custMsg').value;
+      if(!name || !email || !msg) {
+        alert('Please fill name, email and project details.');
+        return;
+      }
+      const fullMsg = `*NEW CUSTOM QUOTE REQUEST*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone || 'Not provided'}%0A*Service:* ${service}%0A*Details:* ${msg}%0A%0APlease send me a price estimate.`;
+      window.open(`https://wa.me/256740311003?text=${fullMsg}`, '_blank');
+      
+      const emailBody = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0AMessage: ${msg}`;
+      const formSubmitUrl = `https://formsubmit.co/creedwhite250@gmail.com?subject=New Quote Request from ${name}&body=${encodeURIComponent(emailBody.replace(/%0A/g,'\n'))}`;
+      window.open(formSubmitUrl, '_blank');
+      
+      customForm.reset();
+      alert('Quote request sent! We will reply via WhatsApp/email within few hours.');
+    });
+  }
+
+  const mobileBtn = document.getElementById('mobileBtn');
+  const navLinks = document.getElementById('navLinks');
+  if(mobileBtn) {
+    mobileBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
+  }
+  
+  document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if(href && href.startsWith('#')) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if(target) target.scrollIntoView({ behavior: 'smooth' });
+        if(navLinks.classList) navLinks.classList.remove('show');
+      }
+    });
+  });
+</script>
+</body>
+</html>
